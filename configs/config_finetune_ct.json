@@ -1,0 +1,13 @@
+{
+    "optimization": {
+        "lr": {
+            "mask_net": 5e-05
+        }
+    },
+    "save_name": "finetune_ct",
+    "training_options": {
+        "batch_size": 1,
+        "epochs": 30,
+        "val_data_file": "utils/images/BSD/val_BSD.h5"
+    }
+}

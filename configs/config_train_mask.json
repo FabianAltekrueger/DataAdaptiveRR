@@ -1,0 +1,41 @@
+{   
+    "noise_range": [
+        0,
+        30
+    ],
+    "noise_test": 25,
+    "optimization": {
+        "lr": {
+            "mask_net": 0.0001,
+            "mu": 0.05,
+            "sig": 0.001,
+            "spline_scaling": 0.005
+        }
+    },
+    "perturb_range": [
+        -2,
+        2
+    ],
+    "pretrain_epochs": 2,
+    "saving_path": "trained_models/run1",
+    "training_options": {
+        "batch_size": 32,
+        "epochs": 35,
+        "fixed_point_solver_bw_params": {
+            "max_iter": 100,
+            "tol": 0.001
+        },
+        "fixed_point_solver_fw_params": {
+            "max_iter": 500,
+            "tol": 0.0001
+        },
+        "scheduler": {
+            "end_factor": 0.5,
+            "gamma": 0.75,
+            "n_times": 5,
+            "use": true
+        },
+        "train_data_file": "utils/images/BSD/train_BSD.h5",
+        "val_data_file": "utils/images/BSD/val_BSD.h5"
+    }
+}
